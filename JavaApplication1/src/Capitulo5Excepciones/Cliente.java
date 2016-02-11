@@ -15,8 +15,9 @@ public class Cliente {
     
 /**
  * 
- * @param email
- * @param edad 
+ * 
+     * @param email
+     * @param edad
  */
     public Cliente(String email, int edad) {
         this.email = email;
@@ -55,9 +56,11 @@ public class Cliente {
 
     /**
      * @param edad the edad to set
+     * @throws Capitulo5Excepciones.ValorNoNegativoException
      */
-    public void setEdad(int edad) throws ValorNoNegativoException {
-          ValidarEdad validar=new ValidarEdad();
+    public void setEdad(int edad) throws ValorNoNegativoException{
+        
+        ValidarEdad validar = new ValidarEdad();
         validar.checarEdadNegativa(edad);
         this.edad = edad;
     }

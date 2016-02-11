@@ -13,14 +13,15 @@ package Capitulo5Excepciones;
  */
 public class ProbarMiExcepcion {
     public static void main(String[] args){
-        try {
-            Cliente c=new Cliente();
-            c.setEdad(-19);
-        } catch (ValorNoNegativoException ex) {
-            System.out.println(ex.getMessage());
-        }finally{
-            System.out.println("Este se ejcuta se lance o no la excepcion");
-        }
+    try{
+        Cliente c=new Cliente();
+        c.setEdad(20);
+    }catch (ValorNoNegativoException ex){
+        System.out.println(ex.getMessage());
+    }finally{
+        System.out.println("Este siempre se ejecuta");
+    }
+        
         
         
     }
