@@ -41,8 +41,12 @@ public class Cliente {
      * Este metodo necesita que proporciones un string
      * que va a ser el email que le va a asignar al cliente
      * @param email aqui debes de poner el string correspondiente al email
+     * @throws Capitulo5Excepciones.ValidarEmail
+   
+     
      */
-    public void setEmail(String email) {
+    public void setEmail(String email) throws ValidarEmail{
+        ValidarEmail.checarValidarEmail(email);
       
         this.email = email;
     }
@@ -57,6 +61,8 @@ public class Cliente {
     /**
      * @param edad the edad to set
      * @throws Capitulo5Excepciones.ValorNoNegativoException
+     * @throws Capitulo5Excepciones.MenorDeEdadException
+     * 
      */
     public void setEdad(int edad) throws ValorNoNegativoException, 
             MenorDeEdadException{
@@ -64,8 +70,15 @@ public class Cliente {
       
         ValidarEdad.checarEdadNegativa(edad);
         ValidarEdad.checarMenorEdad(edad);
+        
         this.edad = edad;
+    }
+
+    void sethola(String metabee50hotmailcom) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
 }
+
+

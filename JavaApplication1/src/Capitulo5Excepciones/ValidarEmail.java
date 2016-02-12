@@ -7,16 +7,25 @@ package Capitulo5Excepciones;
 
 /**
  *
- * @author T-101
+ * @author Orange75
  */
-public class ClaseMuyUtil extends Exception {
+class ValidarEmail extends Exception{
+public ValidarEmail(){
     
-    public static void main(String[] args) {
-        String hola="hola mundo@hotmail.xom";
+}
+    static void checarValidarEmail(String email) {
+         String hola;
+    hola = "holamundo@hotmail.xom";
         if(hola.contains("@")){
+            
             System.out.println("Si contiene un arroba");
         }else{
             System.out.println("no contiene un arroba");
         }
     }
+
 }
+
+
+    
+

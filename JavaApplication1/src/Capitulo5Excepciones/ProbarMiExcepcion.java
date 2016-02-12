@@ -16,10 +16,17 @@ public class ProbarMiExcepcion {
     try{
         Cliente c=new Cliente();
         c.setEdad(20);
+        c.sethola("metabee50@hotmail.com");
+        
     }catch (ValorNoNegativoException ex){
         System.out.println(ex.getMessage());
     }catch(MenorDeEdadException e){
         System.out.println(e.getMessage());
+    }catch (ValidarEmail e){
+        System.out.println(e.getMessage());   
+    }
+    
+       
         }finally{
         System.out.println("Este siempre se ejecuta");
     }
@@ -28,4 +35,4 @@ public class ProbarMiExcepcion {
         
     }
     
-}
+
