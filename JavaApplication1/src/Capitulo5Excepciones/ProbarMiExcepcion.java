@@ -16,7 +16,7 @@ public class ProbarMiExcepcion {
     try{
         Cliente c=new Cliente();
         c.setEdad(20);
-        c.sethola("metabee50@hotmail.com");
+        c.setEmail("metabee50@hotmail.com");
         
     }catch (ValorNoNegativoException ex){
         System.out.println(ex.getMessage());
@@ -27,8 +27,7 @@ public class ProbarMiExcepcion {
     }
     
        
-        }finally{
-        System.out.println("Este siempre se ejecuta");
+       
     }
         
         

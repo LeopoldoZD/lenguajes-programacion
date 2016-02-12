@@ -126,8 +126,8 @@ public class InterfazCliente extends javax.swing.JFrame {
         try{
         Cliente c=new Cliente();
         c.setEdad(Integer.parseInt(textoEdad.getText()));
-       
-        etiquetaResultado.setText("wachinton etsito");
+        etiquetaResultado.setText("wachinton etxito");
+        c.setEmail(String.Text(textoEmail.getClass()));
         etiquetaResultado.setText("correo valido");
     }catch (ValorNoNegativoException ex){
         etiquetaResultado.setText(ex.getMessage());

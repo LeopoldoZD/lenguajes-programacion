@@ -74,9 +74,6 @@ public class Cliente {
         this.edad = edad;
     }
 
-    void sethola(String metabee50hotmailcom) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
     
 }
