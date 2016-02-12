@@ -18,7 +18,9 @@ public class ProbarMiExcepcion {
         c.setEdad(20);
     }catch (ValorNoNegativoException ex){
         System.out.println(ex.getMessage());
-    }finally{
+    }catch(MenorDeEdadException e){
+        System.out.println(e.getMessage());
+        }finally{
         System.out.println("Este siempre se ejecuta");
     }
         
