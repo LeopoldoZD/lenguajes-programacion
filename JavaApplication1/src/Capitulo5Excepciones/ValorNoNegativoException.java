@@ -11,8 +11,7 @@ package Capitulo5Excepciones;
  */
 public class ValorNoNegativoException extends Exception{
     public ValorNoNegativoException(){
-        super("No puedes meter un valor negativo");
-        
+        super("No puedo dar de alta a un menor de 18 años");
     }
     
     
