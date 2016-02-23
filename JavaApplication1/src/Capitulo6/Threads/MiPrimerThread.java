@@ -12,10 +12,10 @@ package Capitulo6.Threads;
  */
 public class MiPrimerThread extends Thread{
 
-    @Override
+   
     public void run() {
         System.out.println("soy un thread y me llamo "+ this.getName());
-        MiPrimerThread t1=new MiPrimerThread();
+       
         //opcionalmente se poner nombre
      
         

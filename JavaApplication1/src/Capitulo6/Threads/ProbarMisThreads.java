@@ -14,10 +14,10 @@ public class ProbarMisThreads {
         //ciclo de vida del thread sin contar pausa
         //1 Creado
         MiPrimerThread t1=new MiPrimerThread();
-        // 2. Inicializado
+       //opcionalmente le ponemos nombre
         t1.setName("chana");
-        
-       
+         // 2. Inicializado
+       t1.start();
         
         //3. En ejecucion (cuando corras este programa) y se active
         //su metodo run
