@@ -3,35 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package capituloEtE;
-
-import capituloEtE.capitulo2.Direccion;
-
-
+package capituloEtE.capitulo2;
 
 /**
  *
- * @author T-101
+ * @author Orange75
  */
-public class Modelo {
-    
-    private String nombre;
-    private String aPaterno;
-    private int edad;
-    private float sueldo;
-    private String direccion;
-
-    public Modelo(String nombre, String aPaterno, int edad, float sueldo, String direccion) {
-        this.nombre = nombre;
-        this.aPaterno = aPaterno;
-        this.edad = edad;
-        this.sueldo = sueldo;
-        this.direccion = direccion;
-    }
-
-    
-    
-    
+public class Cliente {
+   private String nombre;
+   private String aPaterno;
+   private int edad;
+   private float sueldo;
+   private Direccion direccion;
+   
+  public Cliente(String nombre, String aPaterno, int edad, float sueldo, Direccion direccion ){
+      this.nombre= nombre;
+      this.aPaterno= aPaterno;
+      this.edad=edad;
+      this.sueldo=sueldo;
+      this.direccion=direccion;
+  
+             
+  }
 
     public String getNombre() {
         return nombre;
@@ -65,14 +58,11 @@ public class Modelo {
         this.sueldo = sueldo;
     }
 
-    public String getDireccion() {
+    public Direccion getDireccion() {
         return direccion;
     }
 
-    public void setDireccion(String direccion) {
+    public void setDireccion(Direccion direccion) {
         this.direccion = direccion;
     }
-
-    
-    
 }

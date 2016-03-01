@@ -5,33 +5,23 @@
  */
 package capituloEtE.capitulo2;
 
-import capituloEtE.Modelo;
-
 /**
- *arreglos con los datos de la clase modelo
- * @author T-101
+ *
+ * @author Orange75
  */
-public class GenerarClientes  {
- 
-       
-       public static Modelo[]obtenerClientes() {
-         
-           Modelo Modelos[]=new Modelo[3];
-           Modelos[0]=new Modelo("Ana","Lopez",20,20000,new Direccion("sur 11",20,"ecatepunk"));
-          Modelos[1]=new Modelo("pedro","martinez",45,14000,new Direccion("mexico",122,"nezayork"));
-          Modelos[2]=new Modelo("laura","gomez",30,70000,new Direccion("R - 1",43,"cloacalco"));
-         
-       
-                   
-           
-           return Modelos;
-            
-        }
-
-   
+public class GenerarClientes {
+    public static Cliente[] obtenerClientes(){
+        Cliente clientes[]=new Cliente[3];
+        clientes[0]=new Cliente("Ana","lopez", 20, 20000,new Direccion("sur 11",20,"ecatepunk") );
+        clientes[1]=new Cliente("Pedro","martinez",45,14000, new Direccion("mexico",122,"nezayork"));
+        clientes[2]=new Cliente("Laura","gomez",30,70000,new Direccion("r-1",43,"cloacalco"));
         
         
-    
-
+        
+        
+        
+        return clientes;
+        
+    }
     
 }
