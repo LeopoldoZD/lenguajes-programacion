@@ -2,6 +2,12 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+//agregar numero=0(es la pregunta
+//generador de preguntas
+//crear un metodo, se coloca hasta abajo
+//en jbutton2 se coloca numero++ y el metodo iniciartoas()
+
+
  */
 package capitulo11.collections;
 
@@ -148,7 +154,7 @@ public class TestBasico extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         numero++;
-        iniciarTodas(p);
+        iniciarTodas();
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
