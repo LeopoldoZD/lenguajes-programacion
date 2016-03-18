@@ -47,3 +47,20 @@ public class GeneradorPreguntas {
         
     }
 }
+public static boolean checarRespuesta(Pregunta p, JRadioButton[] radios){
+boolean respuesta=false;
+String seleccion="";
+for(JRadioButton radio:radios){
+if(radio.isSelected()){
+seleccion=radio.gerText();
+
+}
+}
+for(Opcion o:p.getOpciones()){
+if(o.isEstatus()){
+if(o.getTitulo().equals(seleccion))respuesta=true;
+
+}
+}
+return respuesta;
+}
