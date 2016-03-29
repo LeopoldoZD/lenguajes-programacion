@@ -41,12 +41,12 @@ public class Cliente {
      * Este metodo necesita que proporciones un string
      * que va a ser el email que le va a asignar al cliente
      * @param email aqui debes de poner el string correspondiente al email
-     * @throws Capitulo5Excepciones.ValidarEmail
+ 
    
      
      */
-    public void setEmail(String email) throws ValidarEmail{
-        ValidarEmail.checarValidarEmail(email);
+    public void setEmail(String email){
+      
       
         this.email = email;
     }
